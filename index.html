@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math App</title>
+    <link rel="stylesheet" href="./static/styles/styles.css" />
+    <link rel="icon" href="./static/icons/app-icon.svg" />
+</head>
+<body>
+    <!-- TOPBAR -->
+    <div class="topBar">
+        <div class="titleBar"><img src="./static/icons/app-icon.svg" /></div>
+        <div class="topBar-buttons">
+            <button class="topBtn" id="minimize-btn">
+                <svg width="24" height="24" fill="#949aa7" class="bi bi-dash" viewBox="0 0 16 16">
+                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                </svg>
+            </button>
+            <button class="topBtn" id="maximize-btn">
+                <svg width="12" height="12" fill="#949aa7" viewBox="0 0 16 16">
+                    <path d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z" />
+                </svg>
+            </button>
+            <button class="topBtn" id="close-btn">
+                <svg width="24" height="24" fill="#949aa7" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- MAIN PART -->
+    <div class="mainPart">
+        <!-- SIDEBAR -->
+        <div class="sideBar">
+            <div class="sideBar-top">
+                <button class="sideBar-btns">A</button>
+                <button class="sideBar-btns">B</button>
+                <button class="sideBar-btns">C</button>
+            </div>
+
+            <div class="sideBar-bottom">
+                <button id="sideBar-icon">
+                    <img src="./static/icons/astronaut-spacesuit-wallpaper.jpg" alt="avatar" />
+                </button>
+            </div>
+        </div>
+
+        <!-- PAGE CONTENT -->
+        <div class="content">
+            <h1 id="welcome-text">2 + 2 = 4</h1>
+        </div>
+    </div>
+
+
+    <!-- POPUP ELEMENTS -->
+    <div class="popupElmts">
+        <!-- USER MENU -->
+        <div id="user-menu">
+            <button id="usr-menu-stats">STATS</button>
+            <button id="usr-menu-settings">SETTINGS</button>
+            <button id="usr-menu-info">INFO</button>
+        </div>
+
+        <!-- OVERLAY -->
+        <div id="overlay"></div>
+    </div>
+
+    <!-- JAVASCRIPT RENDERER -->
+    <script src="./src/js/render.js"></script>
+</body>
+</html>
